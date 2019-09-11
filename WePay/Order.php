@@ -51,7 +51,6 @@ class Order extends BasicWePay
             $url = parent::MCH_BASE_URL.'/pay/unifiedorder';
             $this->pay_type = 'mch';
         }
-        $url = 'https://api.mch.weixin.qq.com/pay/unifiedorder';
         return $this->callPostApi($url, $options, false, 'MD5');
     }
 
